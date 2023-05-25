@@ -22,7 +22,10 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: const HomeScreen(title: 'BLoC Counter App'),
+        home: const HomeScreen(
+          title: 'BLoC Counter App',
+          color: Colors.deepPurple,
+        ),
       ),
     );
   }
