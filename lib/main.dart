@@ -1,7 +1,6 @@
 import 'package:dummybloc_counterapp/logic/cubit/counter_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
 import 'presentation/screens/homescreen.dart';
 
 void main() {
@@ -24,7 +23,7 @@ class MyApp extends StatelessWidget {
         ),
         home: const HomeScreen(
           title: 'BLoC Counter App',
-          color: Colors.deepPurple,
+          color: Colors.deepPurpleAccent,
         ),
       ),
     );

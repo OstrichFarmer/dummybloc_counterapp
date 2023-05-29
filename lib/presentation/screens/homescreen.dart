@@ -1,4 +1,5 @@
 import 'package:dummybloc_counterapp/logic/cubit/counter_cubit.dart';
+import 'package:dummybloc_counterapp/presentation/screens/second_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -74,7 +75,15 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             MaterialButton(
               color: widget.color,
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => const SecondScreen(
+                    title: 'Second Counter Screen',
+                    color: Colors.deepOrangeAccent,
+                  ),
+
+                ));
+              },
               child: const Text('Go to second screen'),
             )
           ],
